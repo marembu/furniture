@@ -14,7 +14,7 @@ export const ListOfPicsComponent = ({ source } = {}) => {
       data-infinite="infinite"
       data-player="false"
       data-autohide="false"
-      data-fullscreen="false"
+      data-autofit="false"
     >
       {source.map(pic => {
         return <Pic key={pic.id} {...pic} />;
