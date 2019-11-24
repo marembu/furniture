@@ -7,13 +7,11 @@ export const ListOfPicsComponent = ({ source } = {}) => {
       className="spotlight-group"
       data-animation="fade"
       data-theme="false"
-      data-maximize="false"
-      data-minimize="false"
       data-page="true"
       data-animation="flip"
-      data-infinite="infinite"
+      data-infinite="false"
       data-player="false"
-      data-autohide="false"
+      data-autohide="true"
       data-autofit="false"
     >
       {source.map(pic => {
