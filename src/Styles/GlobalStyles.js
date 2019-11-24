@@ -29,6 +29,9 @@ export const GlobalStyle = createGlobalStyle`
       background-position: center center !important;
     }
   }
+  .spotHidden, .icon.close{
+    display:none !important;
+  }
   body {
     /* background: #fefefe;
     height: 100vh;

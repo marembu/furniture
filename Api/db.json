@@ -3,25 +3,25 @@
     {
       "id": 1,
       "alt": "",
-      "classList": "spotlight",
+      "classList": "spotlight spotHidden spotStart",
       "src": "https://i.ibb.co/q17DXdS/01.jpg"
     },
     {
       "id": 2,
       "alt": "",
-      "classList": "spotlight",
+      "classList": "spotlight spotHidden",
       "src": "https://i.ibb.co/PhyzRpv/02.jpg"
     },
     {
       "id": 3,
       "alt": "",
-      "classList": "spotlight",
+      "classList": "spotlight spotHidden",
       "src": "https://i.ibb.co/TMJtVGH/03.jpg"
     },
     {
       "id": 4,
       "alt": "",
-      "classList": "spotlight",
+      "classList": "spotlight spotHidden",
       "src": "https://i.ibb.co/1vv86ZY/04.jpg"
     }
   ],
@@ -29,13 +29,13 @@
     {
       "id": 1,
       "alt": "",
-      "classList": "spotlight",
+      "classList": "spotlight spotHidden spotStart",
       "src": "https://i.ibb.co/G7k0Wsr/1-2.png"
     },
     {
       "id": 2,
       "alt": "",
-      "classList": "spotlight",
+      "classList": "spotlight spotHidden",
       "src": "https://i.ibb.co/vJCm7k4/3-4.png"
     }
   ]

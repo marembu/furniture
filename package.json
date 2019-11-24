@@ -4,6 +4,11 @@
   "description": "",
   "keywords": [],
   "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "webpack-dev-server"
+  },
   "dependencies": {
     "react": "16.8.6",
     "react-dom": "16.8.6",
@@ -11,12 +16,20 @@
     "styled-components": "4.4.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.4",
-    "typescript": "3.3.3"
-  },
-  "scripts": {
-    "build": "parcel src/index.html",
-    "dev": "parcel src/index.html"
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "core-js": "^3.4.1",
+    "html-webpack-plugin": "^3.2.0",
+    "regenerator-runtime": "^0.13.3",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.9.0",
+    "whatwg-fetch": "^3.0.0"
   },
   "browserslist": [
     ">0.2%",
