@@ -1,16 +1,11 @@
-import React, { createContext } from "react";
-import { pics, pics_m } from "../sources/";
+import React, { createContext, Fragment } from "react";
 const { Provider, Consumer } = createContext();
-
 class ContextStore extends React.Component {
-  state = {
-    source: pics_m
-  };
   render() {
-    return <Provider value={this.state}>{this.props.comp}</Provider>;
+    //console.log(this.props.state);
+    return <Provider value={this.props.state}>{this.props.comp}</Provider>;
   }
 }
-
 const WrapperConsumer = Component => {
   return props => {
     return (

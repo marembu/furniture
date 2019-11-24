@@ -1,4 +1,4 @@
-import { pics, pics_m } from "../../Api/db.json";
+import { pics_mobile, pics_desktop } from "../../Api/db.json";
 
-export { pics };
-export { pics_m };
+export { pics_mobile };
+export { pics_desktop };

@@ -1,5 +1,5 @@
 {
-  "pics": [
+  "pics_mobile": [
     {
       "id": 1,
       "alt": "",
@@ -25,7 +25,7 @@
       "src": "https://i.ibb.co/1vv86ZY/04.jpg"
     }
   ],
-  "pics_m": [
+  "pics_desktop": [
     {
       "id": 1,
       "alt": "",
