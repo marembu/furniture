@@ -13,7 +13,7 @@ export const ListOfPicsComponent = ({ source } = {}) => {
       data-animation="flip"
       data-infinite="infinite"
       data-player="false"
-      data-autohide="false"
+      data-autohide="true"
     >
       {source.map(pic => {
         return <Pic key={pic.id} {...pic} />;
