@@ -32,6 +32,9 @@ export const GlobalStyle = createGlobalStyle`
   .spotHidden, .icon.close{
     display:none !important;
   }
+  #spotlight.show .scene img{
+    padding: 2% 0;
+  }
   body {
     /* background: #fefefe;
     height: 100vh;
