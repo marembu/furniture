@@ -1,10 +1,34 @@
-/**
- * Spotlight.js v0.6.2 (Bundle)
- * Copyright 2019 Nextapps GmbH
- * Author: Thomas Wilkerling
- * Licence: Apache-2.0
- * https://github.com/nextapps-de/spotlight
- */
+function addLink(imagen) {
+  childToRemove = document.getElementsByClassName("link_externo")[0];
+  if (childToRemove)
+    document.getElementsByClassName("header")[0].removeChild(childToRemove);
+
+  var sisterImage = null;
+  if (imagen) {
+    var appImages = document.querySelectorAll("#app img");
+
+    for (var index = 0; index < appImages.length; index++) {
+      if (appImages[index].getAttribute("src") == imagen.getAttribute("src"))
+        sisterImage = appImages[index];
+    }
+  }
+  if (sisterImage) {
+    let enlace = sisterImage.getAttribute("rel");
+    if (enlace) {
+      boton = document.createElement("div");
+      boton.classList.add("icon");
+      boton.classList.add("autofit");
+      boton.classList.add("link_externo");
+      boton.onclick = function() {
+        window.open(enlace, "_blank");
+      };
+      var header = document.getElementsByClassName("header")[0];
+
+      header.insertBefore(boton, header.firstChild);
+    }
+  }
+}
+
 (function() {
   "use strict";
   var aa = {};
@@ -95,11 +119,7 @@
   }
   function n(a, b) {
     a || (a = window.event);
-    a &&
-      (b || a.preventDefault(),
-      a.stopImmediatePropagation(),
-      //   (a.returnValue = !1)
-      false);
+    a && (b || a.preventDefault(), a.stopImmediatePropagation(), false);
     return !1;
   }
   var oa = document.createElement("style");
@@ -236,6 +256,8 @@
       var b = "false" !== I.preloader;
       M = new Image();
       M.onload = function() {
+        //console.log(M);
+        addLink(M);
         b && h(P, "show");
         T &&
           ((y = this.width),

@@ -35,6 +35,11 @@ export const GlobalStyle = createGlobalStyle`
   #spotlight.show .scene img{
     padding: 2% 0;
   }
+  #spotlight .link_externo {
+    background-image: url(https://i.ibb.co/tYfj9NN/enlace.png);
+    background-size: auto auto;
+    padding: 0 40px !important;
+  }
   body {
     /* background: #fefefe;
     height: 100vh;
