@@ -1,5 +1,5 @@
 function addLink(imagen) {
-  childToRemove = document.getElementsByClassName("link_externo")[0];
+  let childToRemove = document.getElementsByClassName("link_externo")[0];
   if (childToRemove)
     document.getElementsByClassName("header")[0].removeChild(childToRemove);
 
@@ -15,7 +15,7 @@ function addLink(imagen) {
   if (sisterImage) {
     let enlace = sisterImage.getAttribute("rel");
     if (enlace) {
-      boton = document.createElement("div");
+      let boton = document.createElement("div");
       boton.classList.add("icon");
       boton.classList.add("autofit");
       boton.classList.add("link_externo");
